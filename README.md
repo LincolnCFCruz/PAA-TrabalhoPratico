@@ -39,7 +39,7 @@ Greedy: O algoritmo guloso constrói a solução passo a passo, fazendo escolhas
 ### Testes
 O arquivo test_set.py contém um conjunto abrangente de testes para avaliar o desempenho e a precisão dos algoritmos implementados.
 
-Contribuições
+### Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, correções ou adicionar novos recursos ao projeto.
 
 Autores
