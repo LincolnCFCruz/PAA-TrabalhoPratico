@@ -23,7 +23,7 @@ Este repositório contém o código-fonte e informações relacionadas ao trabal
   - `greedy.py`: Implementação do algoritmo guloso para resolver o problema do set cover.
   - `test_set.py`: Conjunto de testes para os algoritmos mencionados acima.
 
- Executando o Programa
+### Executando o Programa
 
 Para executar o programa, você pode utilizar o arquivo `__init__.py` como ponto de entrada. Certifique-se de ter um ambiente Python configurado corretamente.
 
