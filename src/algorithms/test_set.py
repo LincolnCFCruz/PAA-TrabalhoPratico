@@ -4,8 +4,8 @@ import random
 def test_data(i):
     if i == 0:
         universe = 5
-        subsets = [ set([4, 1, 3]), set([2, 5]), set([1, 4, 3, 2]) ]
-        costs = [5, 10, 3]
+        subsets = [ set([1, 2]), set([2, 3]), set([4, 5]) ]
+        costs = [10, 5, 8]
 
         return universe, subsets, costs
 
@@ -68,14 +68,14 @@ def test_data(i):
 
         return universe, subsets, costs
     
-    if i == 40:
+    if i == 8:
         universe = 50
         subsets = [frozenset([i, i+1]) for i in range(1, 51, 2)]
         costs = [1 for _ in range(25)]
 
         return universe, subsets, costs
     
-    if i == 50:
+    if i == 9:
         universe = 100
         subsets = [frozenset([i, i+1]) for i in range(1, 101, 2)]
         costs = [1 for _ in range(50)]

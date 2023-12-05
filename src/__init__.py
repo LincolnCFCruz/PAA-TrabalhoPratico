@@ -6,11 +6,12 @@ from timeit import default_timer as timer
 from algorithms.greedy import *
 from algorithms.brute_force import *
 from algorithms.cost_scaling import *
+from algorithms.branch_bound import *
 
 from algorithms.test_set import *
 
 if __name__ == "__main__":
-    for i in range(0, 8):
+    for i in range(0, 7):
         universe, subsets, costs = test_data(i)
 
         while True:
@@ -33,18 +34,20 @@ if __name__ == "__main__":
 
                 print("Approximation by Cost result: ", result, "Elapsed time: ", timedelta(seconds=end-start), "(", i, ")")
 
+                start = timer()
+                result = branch_bound(universe, subsets, costs)
+                end = timer()
+
+                print("Branch & Bound result: ", result, "Elapsed time: ", timedelta(seconds=end-start), "(", i, ")")
+
                 print("--------------------")
                 print("Universe: ", universe)
                 print("Subsets: ", subsets)
                 print("Costs: ", costs)
-                print("--------------------")
+                print("----------------------------------------------")
                 
                 break
             except Exception as e:
-                print(f"An unexpected error occurred: {e}")
-                print("Trying again with new data set...")
-                print("--------------------")
-
                 universe = 30
 
                 # Generate random subsets
