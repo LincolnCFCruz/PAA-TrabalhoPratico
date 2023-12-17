@@ -1,6 +1,6 @@
 from itertools import chain, combinations
 
-# Brute Force Algorithm O(n^2)
+# Brute Force Algorithm O(2^N)
 def brute_force(universe, subsets, costs):
     n = len(subsets)
     min_cost = float('inf')
